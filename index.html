@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI发展史 - 星辰之旅</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 星辰背景容器 -->
+    <div id="stars-container"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-text">UI Evolution</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="#history" class="nav-link">发展历程</a></li>
+                <li class="nav-item"><a href="#future" class="nav-link">未来展望</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">关于</a></li>
+            </ul>
+            <div class="nav-cta">
+                <button class="cta-button">了解更多</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 留言板区域 -->
+    <section class="message-board">
+        <div class="message-container">
+            <div class="message-header">
+                <h2 class="message-title">致未来的UI设计工作者</h2>
+                <p class="message-subtitle">在这里留下你对UI设计的感悟、期望或建议，与未来的设计师们分享你的想法</p>
+            </div>
+            
+            <div class="message-content">
+                <!-- 留言表单 -->
+                <div class="message-form-container">
+                    <form class="message-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">你的名字</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="请输入你的名字" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">电子邮箱</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="请输入你的电子邮箱" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">留言内容</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="请输入你的留言..." rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="primary-button">提交留言</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- 留言展示 -->
+                <div class="messages-list">
+                    <h3 class="messages-title">留言墙</h3>
+                    <div id="messages-container" class="messages-container">
+                        <!-- 留言将通过JavaScript动态添加 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主内容容器 -->
+    <div class="main-container">
+        <!-- 毛玻璃效果的内容卡片 -->
+        <div class="glass-card">
+            <!-- 标题区域 -->
+            <header class="header">
+                <h1 class="title">UI发展史</h1>
+                <p class="subtitle">从像素到沉浸式体验的演进</p>
+                <div class="header-cta">
+                    <button class="primary-button">探索历程</button>
+                    <button class="secondary-button">下载报告</button>
+                </div>
+            </header>
+            
+            <!-- 内容区域 -->
+            <main class="content">
+                <!-- 引言 -->
+                <section class="section">
+                    <h2 class="section-title">引言</h2>
+                    <p class="section-content">
+                        用户界面（UI）是人类与计算机之间的桥梁，它的发展历程见证了技术与设计的不断融合。从早期的命令行界面到如今的沉浸式体验，UI设计始终致力于创造更直观、更高效、更愉悦的用户交互方式。
+                    </p>
+                </section>
+                
+                <!-- 第一阶段：命令行时代 -->
+                <section class="section">
+                    <h2 class="section-title">1960-1980：命令行时代</h2>
+                    <p class="section-content">
+                        这一时期的计算机主要采用命令行界面（CLI），用户需要通过输入特定命令来操作计算机。界面由纯文本组成，没有图形元素，操作门槛高，仅适合专业技术人员使用。
+                    </p>
+                    <p class="section-content">
+                        代表性系统包括：UNIX、MS-DOS、CP/M等。
+                    </p>
+                </section>
+                
+                <!-- 第二阶段：图形界面诞生 -->
+                <section class="section">
+                    <h2 class="section-title">1980-1990：图形界面诞生</h2>
+                    <p class="section-content">
+                        1981年，施乐PARC实验室推出了第一台具有图形用户界面（GUI）的计算机Xerox Star，引入了窗口、图标、菜单和指针（WIMP）概念。1984年，苹果发布Macintosh，将GUI推向大众市场。
+                    </p>
+                    <p class="section-content">
+                        这一时期的UI设计开始注重视觉元素和用户体验，操作变得更加直观。
+                    </p>
+                </section>
+                
+                <!-- 第三阶段：桌面系统普及 -->
+                <section class="section">
+                    <h2 class="section-title">1990-2000：桌面系统普及</h2>
+                    <p class="section-content">
+                        随着Windows 95的发布，图形界面得到了广泛普及。这一时期，UI设计开始标准化，窗口、菜单、对话框等元素成为通用设计语言。色彩和字体的运用更加丰富，界面变得更加美观。
+                    </p>
+                    <p class="section-content">
+                        网页设计也在这一时期兴起，HTML和CSS的出现为Web UI奠定了基础。
+                    </p>
+                </section>
+                
+                <!-- 第四阶段：移动互联网时代 -->
+                <section class="section">
+                    <h2 class="section-title">2000-2010：移动互联网时代</h2>
+                    <p class="section-content">
+                        智能手机的出现彻底改变了UI设计。触控界面取代了传统的鼠标键盘，手势操作成为主流。UI设计变得更加简洁，注重单手操作和触控体验。
+                    </p>
+                    <p class="section-content">
+                        iOS的拟物化设计和Android的扁平化设计引领了这一时期的设计潮流。
+                    </p>
+                </section>
+                
+                <!-- 第五阶段：扁平化与极简主义 -->
+                <section class="section">
+                    <h2 class="section-title">2010-2020：扁平化与极简主义</h2>
+                    <p class="section-content">
+                        扁平化设计取代了拟物化设计，成为主流。这种设计风格强调简洁、清晰的视觉效果，减少冗余元素，注重内容本身。Material Design和Flat Design成为代表性设计语言。
+                    </p>
+                    <p class="section-content">
+                        响应式设计的兴起确保了UI在不同设备上都能提供良好的体验。
+                    </p>
+                </section>
+                
+                <!-- 第六阶段：沉浸式与智能化 -->
+                <section class="section">
+                    <h2 class="section-title">2020-至今：沉浸式与智能化</h2>
+                    <p class="section-content">
+                        随着AR/VR技术的发展，沉浸式UI成为新的趋势。语音交互、手势识别、眼动追踪等新技术为UI设计带来了更多可能性。人工智能的融入使得UI能够根据用户行为进行自适应调整，提供个性化体验。
+                    </p>
+                    <p class="section-content">
+                        黑暗模式、微动效、3D元素等设计元素的运用，进一步提升了用户体验的层次感和沉浸感。
+                    </p>
+                </section>
+                
+                <!-- 未来展望 -->
+                <section class="section">
+                    <h2 class="section-title">未来展望</h2>
+                    <p class="section-content">
+                        未来的UI设计将更加注重用户体验的个性化和智能化。脑机接口、情感计算等新技术的发展，可能会彻底改变人类与计算机的交互方式。UI设计将更加注重情感化表达，创造出更具人文关怀的交互体验。
+                    </p>
+                    <p class="section-content">
+                        无论技术如何发展，UI设计的核心始终是以人为本，创造出更直观、更高效、更愉悦的用户体验。
+                    </p>
+                </section>
+            </main>
+            
+            <!-- 页脚 -->
+            <footer class="footer">
+                <p>© 2025 UI发展史 - 星辰之旅</p>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- JavaScript文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
